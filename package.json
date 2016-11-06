@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "Fiverr's ESLint config",
   "main": "index.js",
-  "peerDependencies": ">=3"
+  "peerDependencies": {
+    "eslint": "^3.3.0",
+    "eslint-plugin-react": "^6.0.0"
+  }
 }
