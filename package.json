@@ -1,0 +1,7 @@
+{
+  "name": "eslint-config-fiverr",
+  "version": "1.0.0",
+  "description": "Fiverr's ESLint config",
+  "main": "index.js",
+  "peerDependencies": ">=3"
+}
