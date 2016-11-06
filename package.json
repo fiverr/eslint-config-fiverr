@@ -3,7 +3,6 @@
   "moduleName": "eslint-config-fiverr",
   "version": "0.0.1",
   "description": "Fiverr's ESLint config",
-  "private": true,
   "main": "index.js",
   "peerDependencies": {
     "eslint": "^3.3.0",
