@@ -6,11 +6,16 @@ ESLint configuration & ruleset for Javascript (ES6) + React.
 
 In order to add eslint-config-fiverr to a repository, use npm to add it to the development dependencies.
 
-```sh
-npm i --save-dev eslint-plugin-react @fiverr/eslint-config-fiverr
+With Yarn:
+```
+yarn add eslint-plugin-react @fiverr/eslint-config-fiverr --dev
 ```
 
+Or with NPM:
 
+```
+npm i --save-dev eslint-plugin-react @fiverr/eslint-config-fiverr
+```
 
 ## Configuration
 
@@ -61,7 +66,9 @@ Configuring your IDE to use ESLint is fairly easy:
 
 ##### Sublime
 You can use either of these plugins:
+
 1. [SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
+
 2. [Build Next](https://github.com/albertosantini/sublimetext-buildnext)
 
 ##### Atom
