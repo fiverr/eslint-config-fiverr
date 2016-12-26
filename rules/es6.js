@@ -24,6 +24,7 @@ module.exports = {
         "prefer-const": 2,
         "prefer-template": 2,
         "rest-spread-spacing": 2,
-        "template-curly-spacing": 2
+        "template-curly-spacing": 2,
+        "no-template-curly-in-string": 2
     }
 };

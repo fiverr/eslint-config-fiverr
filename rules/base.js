@@ -30,6 +30,21 @@ module.exports = {
         "space-before-function-paren": ["error", "never"],
         "space-in-parens": 2,
         "spaced-comment": ["error", "always"],
-        "vars-on-top": 2
+        "vars-on-top": 2,
+        "radix": 2,
+        "no-nested-ternary": 2,
+        "one-var-declaration-per-line": 2,
+        "no-unsafe-negation": 2,
+        "valid-jsdoc": 1,
+        "array-callback-return": 2,
+        "block-scoped-var": 2,
+        "curly": 2,
+        "default-case": 2,
+        "no-caller": 2,
+        "no-eval": 2,
+        "no-floating-decimal": 2,
+        "no-global-assign": 2,
+        "no-implied-eval": 2,
+        "no-loop-func": 2
     }
 };
