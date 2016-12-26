@@ -25,6 +25,6 @@ module.exports = {
         "prefer-template": 2,
         "rest-spread-spacing": 2,
         "template-curly-spacing": 2,
-        "no-empty-pattern": 2
+        "no-template-curly-in-string": 2
     }
 };
