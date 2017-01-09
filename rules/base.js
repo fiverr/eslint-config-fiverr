@@ -35,7 +35,6 @@ module.exports = {
         "no-nested-ternary": 2,
         "one-var-declaration-per-line": 2,
         "no-unsafe-negation": 2,
-        "valid-jsdoc": 1,
         "array-callback-return": 2,
         "block-scoped-var": 2,
         "curly": 2,
