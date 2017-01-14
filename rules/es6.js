@@ -15,6 +15,8 @@ module.exports = {
         "arrow-parens": 2,
         "arrow-spacing": 2,
         "no-duplicate-imports": 2,
+        "no-extra-strict": 2,
+        "no-template-curly-in-string": 2,
         "no-useless-computed-key": 2,
         "no-useless-constructor": 2,
         "no-useless-rename": 2,
@@ -22,9 +24,9 @@ module.exports = {
         "object-shorthand": ["error", "properties"],
         "prefer-arrow-callback": 2,
         "prefer-const": 2,
+        "prefer-spread": 2,
         "prefer-template": 2,
         "rest-spread-spacing": 2,
-        "template-curly-spacing": 2,
-        "no-template-curly-in-string": 2
+        "template-curly-spacing": 2
     }
 };
