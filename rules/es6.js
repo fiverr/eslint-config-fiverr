@@ -15,7 +15,6 @@ module.exports = {
         "arrow-parens": 2,
         "arrow-spacing": 2,
         "no-duplicate-imports": 2,
-        "no-extra-strict": 2,
         "no-template-curly-in-string": 2,
         "no-useless-computed-key": 2,
         "no-useless-constructor": 2,
