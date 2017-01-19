@@ -44,6 +44,15 @@ module.exports = {
         "no-floating-decimal": 2,
         "no-global-assign": 2,
         "no-implied-eval": 2,
-        "no-loop-func": 2
+        "no-loop-func": 2,
+        "no-empty-function": 2,
+        "no-extra-bind": 2,
+        "no-sequences": 2,
+        "no-useless-call": 2,
+        "no-useless-escape": 2,
+        "no-useless-return": 2,
+        "no-with": 2,
+        "wrap-iife": [2, "inside"],
+        "consistent-this": 2
     }
 };
