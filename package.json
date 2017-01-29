@@ -1,7 +1,7 @@
 {
   "name": "@fiverr/eslint-config-fiverr",
   "moduleName": "eslint-config-fiverr",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Fiverr's ESLint config",
   "main": "index.js",
   "peerDependencies": {

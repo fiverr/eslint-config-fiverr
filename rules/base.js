@@ -19,6 +19,7 @@ module.exports = {
         "lines-around-comment": ["error", {"beforeBlockComment": true, "allowBlockStart": true, "beforeLineComment": true}],
         "new-cap": 2,
         "no-lonely-if": 2,
+        "no-case-declarations": 0,
         "no-multiple-empty-lines": 2,
         "no-trailing-spaces": 1,
         "no-unneeded-ternary": 2,
