@@ -41,7 +41,6 @@ module.exports = {
         }],
         "react/jsx-no-comment-textnodes": 2,
         "react/jsx-no-duplicate-props": 2,
-        "react/jsx-no-target-blank": 2,
         "react/jsx-no-undef": 2,
         "react/jsx-pascal-case": 2,
         "react/jsx-space-before-closing": [2, "never"],
