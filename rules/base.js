@@ -53,6 +53,6 @@ module.exports = {
         "no-useless-return": 2,
         "no-with": 2,
         "wrap-iife": [2, "inside"],
-        "consistent-this": 1
+        "consistent-this": 2
     }
 };
