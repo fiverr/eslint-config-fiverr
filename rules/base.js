@@ -49,7 +49,7 @@ module.exports = {
         "no-extra-bind": 2,
         "no-sequences": 2,
         "no-useless-call": 2,
-        "no-useless-escape": 2,
+        "no-useless-escape": 0,
         "no-useless-return": 2,
         "no-with": 2,
         "wrap-iife": [2, "inside"],
