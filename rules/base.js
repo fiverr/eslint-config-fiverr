@@ -26,7 +26,7 @@ module.exports = {
         "no-whitespace-before-property": 2,
         "quotes": ["error", "single", {"avoidEscape": true}],
         "semi-spacing": 2,
-        "semi": 2,
+        "semi": [2, "always"],
         "space-before-function-paren": ["error", "never"],
         "space-in-parens": 2,
         "spaced-comment": ["error", "always"],

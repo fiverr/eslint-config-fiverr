@@ -7,9 +7,6 @@ module.exports = {
             jsx: true
         }
     },
-    ecmaFeatures: {
-        jsx: true
-    },
     rules: {
         "react/no-children-prop": 2,
         "react/no-danger-with-children": 2,
