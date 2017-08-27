@@ -23,6 +23,10 @@ module.exports = {
         "no-multiple-empty-lines": 2,
         "no-trailing-spaces": 1,
         "no-unneeded-ternary": 2,
+        "no-unused-vars": [2, {
+            "varsIgnorePattern": "React",
+            "ignoreRestSiblings": false
+        }],
         "no-whitespace-before-property": 2,
         "quotes": ["error", "single", {"avoidEscape": true}],
         "semi-spacing": 2,
