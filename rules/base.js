@@ -25,7 +25,7 @@ module.exports = {
         "no-unneeded-ternary": 2,
         "no-unused-vars": [2, {
             "varsIgnorePattern": "React",
-            "ignoreRestSiblings": false
+            "ignoreRestSiblings": true
         }],
         "no-whitespace-before-property": 2,
         "quotes": ["error", "single", {"avoidEscape": true}],
