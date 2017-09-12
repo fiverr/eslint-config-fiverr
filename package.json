@@ -1,7 +1,7 @@
 {
   "name": "@fiverr/eslint-config-fiverr",
   "moduleName": "eslint-config-fiverr",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Fiverr's ESLint config",
   "author": "Fiverr",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "url": "https://github.com/fiverr/eslint-config-fiverr.git"
   },
   "engines": {
-    "node": ">=6.9.5"
+    "node": ">=6.9.4"
   },
   "main": "index.js",
   "peerDependencies": {
