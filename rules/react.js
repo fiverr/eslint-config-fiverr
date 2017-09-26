@@ -20,7 +20,10 @@ module.exports = {
         "react/no-string-refs": 2,
         "react/no-unescaped-entities": 2,
         "react/no-unknown-property": 2,
-        "react/no-unused-prop-types": 2,
+        "react/no-unused-prop-types": [2, {
+            "customValidators": [],
+            "skipShapeProps": true
+        }],
         "react/prefer-es6-class": 2,
         "react/prefer-stateless-function": 2,
         "react/sort-comp": 2,
