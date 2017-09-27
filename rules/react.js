@@ -20,7 +20,10 @@ module.exports = {
         "react/no-string-refs": 2,
         "react/no-unescaped-entities": 2,
         "react/no-unknown-property": 2,
-        "react/no-unused-prop-types": 2,
+        "react/no-unused-prop-types": [2, {
+            "customValidators": [],
+            "skipShapeProps": true
+        }],
         "react/prefer-es6-class": 2,
         "react/prefer-stateless-function": 2,
         "react/sort-comp": 2,
@@ -40,7 +43,9 @@ module.exports = {
         "react/jsx-no-duplicate-props": 2,
         "react/jsx-no-undef": 2,
         "react/jsx-pascal-case": 2,
-        "react/jsx-space-before-closing": [2, "never"],
+        "react/jsx-tag-spacing": [2, {
+            "beforeSelfClosing": "never"
+        }],
         "react/jsx-uses-vars": 2,
         "react/jsx-wrap-multilines": 2
     }
