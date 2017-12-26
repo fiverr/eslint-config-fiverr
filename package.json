@@ -16,5 +16,9 @@
   "peerDependencies": {
     "eslint": "^3.3.0",
     "eslint-plugin-react": "^6.0.0"
+  },
+  "dependencies": {
+    "eslint": "^3.3.0",
+    "eslint-plugin-react": "^6.0.0"
   }
 }
