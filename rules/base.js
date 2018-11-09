@@ -1,8 +1,12 @@
 module.exports = {
-    "extends": "eslint:recommended",
-    "env": {
-        "browser": true,
-        "jquery": true
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended'
+    ],
+    env: {
+        browser: true,
+        jquery: true,
+        node: true
     },
     rules: {
         "eqeqeq": 2,
@@ -17,7 +21,7 @@ module.exports = {
         "jsx-quotes": 2,
         "keyword-spacing": 2,
         "lines-around-comment": ["error", {"beforeBlockComment": true, "allowBlockStart": true, "beforeLineComment": true}],
-        "new-cap": 2,
+        "new-cap": 0,
         "no-lonely-if": 2,
         "no-case-declarations": 0,
         "no-multiple-empty-lines": 2,

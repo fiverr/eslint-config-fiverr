@@ -3,11 +3,11 @@ module.exports = {
         es6: true
     },
     parserOptions: {
-        ecmaVersion: 6,
+        ecmaVersion: 2018,
         sourceType: 'module',
         ecmaFeatures: {
-            generators: false,
-            objectLiteralDuplicateProperties: false
+            jsx: true,
+            impliedStrict: true
         }
     },
     rules: {

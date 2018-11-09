@@ -13,35 +13,14 @@ npm i --save-dev eslint-plugin-react @fiverr/eslint-config-fiverr
 ## Configuration
 
 Add a `.eslintrc` file in the main directory of your repository, in which you define the usage of eslint-config-fiverr as well as repository specific configuration & rules.
+
 This is the basic structure:
 
 ```javascript
 {
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true,
-            "impliedStrict": true,
-            "experimentalObjectRestSpread": true
-        }
-    },
-    "env": {
-        "browser": true,
-        "jquery": true,
-        "node": true,
-        "jest": true
-    },
-    "globals": {
-
-    },
     "extends": "@fiverr/fiverr",
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-
-    }
+    "globals": {},
+    "rules": {}
 }
 ```
 * globals - add any global variable that is used in your repository. Example: `"React": true`
