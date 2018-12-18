@@ -1,0 +1,24 @@
+defaults: &defaults
+  working_directory: ~/app
+  docker:
+    - image: circleci/node:10
+
+version: 2
+jobs:
+  publish:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Set npmrc credentials
+          command: echo -e $NPMRC > ~/.npmrc
+      - run:
+          name: Publish this thing
+          command: npx published  --git-tag
+
+workflows:
+  version: 2
+  integration:
+    jobs:
+      - publish:
+          context: org-global
