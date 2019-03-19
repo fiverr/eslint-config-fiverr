@@ -3,7 +3,8 @@ module.exports = {
         'plugin:react/recommended'
     ],
     plugins: [
-        'react'
+        'react',
+        'react-hooks'
     ],
     parserOptions: {
         ecmaFeatures: {
@@ -50,6 +51,8 @@ module.exports = {
             "beforeSelfClosing": "never"
         }],
         "react/jsx-uses-vars": 2,
-        "react/jsx-wrap-multilines": 2
+        "react/jsx-wrap-multilines": 2,
+        "react-hooks/rules-of-hooks": 2,
+        "react-hooks/exhaustive-deps": 1
     }
 };
