@@ -1,3 +1,3 @@
 exports.IGNORE = 0;
-exports.WARN = 0;
-exports.ERROR = 0;
+exports.WARN = 1;
+exports.ERROR = 2;
