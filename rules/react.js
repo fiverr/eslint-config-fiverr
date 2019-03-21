@@ -1,9 +1,12 @@
+const { WARN, ERROR } = require('../constants');
+
 module.exports = {
     extends: [
         'plugin:react/recommended'
     ],
     plugins: [
-        'react'
+        'react',
+        'react-hooks'
     ],
     parserOptions: {
         ecmaFeatures: {
@@ -11,45 +14,49 @@ module.exports = {
         }
     },
     rules: {
-        "react/no-children-prop": 2,
-        "react/no-danger-with-children": 2,
-        "react/no-deprecated": 2,
-        "react/no-did-mount-set-state": 2,
-        "react/no-did-update-set-state": 2,
-        "react/no-direct-mutation-state": 2,
-        "react/no-find-dom-node": 2,
-        "react/no-is-mounted": 2,
-        "react/no-render-return-value": 2,
-        "react/no-string-refs": 2,
-        "react/no-unescaped-entities": 2,
-        "react/no-unknown-property": 2,
-        "react/no-unused-prop-types": [2, {
-            "customValidators": [],
-            "skipShapeProps": true
+        'react/no-children-prop': ERROR,
+        'react/no-danger-with-children': ERROR,
+        'react/no-deprecated': ERROR,
+        'react/no-did-mount-set-state': ERROR,
+        'react/no-did-update-set-state': ERROR,
+        'react/no-direct-mutation-state': ERROR,
+        'react/no-find-dom-node': ERROR,
+        'react/no-is-mounted': ERROR,
+        'react/no-render-return-value': ERROR,
+        'react/no-string-refs': ERROR,
+        'react/no-unescaped-entities': ERROR,
+        'react/no-unknown-property': ERROR,
+        'react/no-unused-prop-types': [ERROR, {
+            customValidators: [],
+            skipShapeProps: true
         }],
-        "react/prefer-es6-class": 2,
-        "react/prefer-stateless-function": 2,
-        "react/sort-comp": 2,
-        "react/jsx-closing-bracket-location": [2, "after-props"],
-        "react/jsx-curly-spacing": 2,
-        "react/jsx-equals-spacing": 2,
-        "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-        "react/jsx-first-prop-new-line": [2, "never"],
-        "react/jsx-indent": [2, 4],
-        "react/jsx-indent-props": [2, 4],
-        "react/jsx-key": 2,
-        "react/jsx-no-bind": [2, {
-            "ignoreRefs": true,
-            "allowArrowFunctions": true
+        'react/prefer-es6-class': ERROR,
+        'react/prefer-stateless-function': ERROR,
+        'react/sort-comp': ERROR,
+        'react/jsx-closing-bracket-location': [ERROR, 'after-props'],
+        'react/jsx-curly-spacing': ERROR,
+        'react/jsx-equals-spacing': ERROR,
+        'react/jsx-filename-extension': [WARN, {
+            extensions: ['.js']
         }],
-        "react/jsx-no-comment-textnodes": 2,
-        "react/jsx-no-duplicate-props": 2,
-        "react/jsx-no-undef": 2,
-        "react/jsx-pascal-case": 2,
-        "react/jsx-tag-spacing": [2, {
-            "beforeSelfClosing": "never"
+        'react/jsx-first-prop-new-line': [ERROR, 'never'],
+        'react/jsx-indent': [ERROR, 4],
+        'react/jsx-indent-props': [ERROR, 4],
+        'react/jsx-key': ERROR,
+        'react/jsx-no-bind': [ERROR, {
+            ignoreRefs: true,
+            allowArrowFunctions: true
         }],
-        "react/jsx-uses-vars": 2,
-        "react/jsx-wrap-multilines": 2
+        'react/jsx-no-comment-textnodes': ERROR,
+        'react/jsx-no-duplicate-props': ERROR,
+        'react/jsx-no-undef': ERROR,
+        'react/jsx-pascal-case': ERROR,
+        'react/jsx-tag-spacing': [ERROR, {
+            beforeSelfClosing: 'never'
+        }],
+        'react/jsx-uses-vars': ERROR,
+        'react/jsx-wrap-multilines': ERROR,
+        'react-hooks/rules-of-hooks': ERROR,
+        'react-hooks/exhaustive-deps': ERROR
     }
 };

@@ -1,3 +1,5 @@
+const { ERROR, WARN, IGNORE } = require('../constants');
+
 module.exports = {
     extends: [
         'eslint:recommended'
@@ -8,58 +10,71 @@ module.exports = {
         node: true
     },
     rules: {
-        "eqeqeq": 2,
-        "no-multi-spaces": [2, {"exceptions": { "VariableDeclarator": true, "Property": false }}],
-        "comma-dangle": 2,
-        "comma-spacing": 2,
-        "comma-style": 2,
-        "computed-property-spacing": 2,
-        "dot-notation": 2,
-        "func-call-spacing": 2,
-        "indent": ["error", 4, { "SwitchCase": 1 }],
-        "jsx-quotes": 2,
-        "keyword-spacing": 2,
-        "lines-around-comment": ["error", {"beforeBlockComment": true, "allowBlockStart": true, "beforeLineComment": true}],
-        "new-cap": 0,
-        "no-lonely-if": 2,
-        "no-case-declarations": 0,
-        "no-multiple-empty-lines": 2,
-        "no-trailing-spaces": 1,
-        "no-unneeded-ternary": 2,
-        "no-unused-vars": [2, {
-            "varsIgnorePattern": "React",
-            "ignoreRestSiblings": true
+        'eqeqeq': ERROR,
+        'no-multi-spaces': [ERROR, {
+            exceptions: {
+                VariableDeclarator: true,
+                Property: false
+            }
         }],
-        "no-whitespace-before-property": 2,
-        "quotes": ["error", "single", {"avoidEscape": true}],
-        "semi-spacing": 2,
-        "semi": [2, "always"],
-        "space-before-function-paren": ["error", "never"],
-        "space-in-parens": 2,
-        "spaced-comment": ["error", "always"],
-        "vars-on-top": 2,
-        "radix": 2,
-        "no-nested-ternary": 2,
-        "one-var-declaration-per-line": 2,
-        "no-unsafe-negation": 2,
-        "array-callback-return": 2,
-        "block-scoped-var": 2,
-        "curly": 2,
-        "default-case": 2,
-        "no-caller": 2,
-        "no-eval": 2,
-        "no-floating-decimal": 2,
-        "no-global-assign": 2,
-        "no-implied-eval": 2,
-        "no-loop-func": 2,
-        "no-empty-function": 2,
-        "no-extra-bind": 2,
-        "no-sequences": 2,
-        "no-useless-call": 2,
-        "no-useless-escape": 2,
-        "no-useless-return": 2,
-        "no-with": 2,
-        "wrap-iife": [2, "inside"],
-        "consistent-this": 2
+        'comma-dangle': ERROR,
+        'comma-spacing': ERROR,
+        'comma-style': ERROR,
+        'computed-property-spacing': ERROR,
+        'dot-notation': ERROR,
+        'func-call-spacing': ERROR,
+        'indent': [ERROR, 4, {
+            SwitchCase: WARN
+        }],
+        'jsx-quotes': ERROR,
+        'keyword-spacing': ERROR,
+        'lines-around-comment': [ERROR, {
+            beforeBlockComment: true,
+            allowBlockStart: true,
+            beforeLineComment: true
+        }],
+        'new-cap': IGNORE,
+        'no-lonely-if': ERROR,
+        'no-case-declarations': IGNORE,
+        'no-multiple-empty-lines': ERROR,
+        'no-trailing-spaces': WARN,
+        'no-unneeded-ternary': ERROR,
+        'no-unused-vars': [ERROR, {
+            varsIgnorePattern: 'React',
+            ignoreRestSiblings: true
+        }],
+        'no-whitespace-before-property': ERROR,
+        'quotes': [ERROR, 'single', {
+            avoidEscape: true
+        }],
+        'semi-spacing': ERROR,
+        'semi': [ERROR, 'always'],
+        'space-before-function-paren': [ERROR, 'never'],
+        'space-in-parens': ERROR,
+        'spaced-comment': [ERROR, 'always'],
+        'vars-on-top': ERROR,
+        'radix': ERROR,
+        'no-nested-ternary': ERROR,
+        'one-var-declaration-per-line': ERROR,
+        'no-unsafe-negation': ERROR,
+        'array-callback-return': ERROR,
+        'block-scoped-var': ERROR,
+        'curly': ERROR,
+        'default-case': ERROR,
+        'no-caller': ERROR,
+        'no-eval': ERROR,
+        'no-floating-decimal': ERROR,
+        'no-global-assign': ERROR,
+        'no-implied-eval': ERROR,
+        'no-loop-func': ERROR,
+        'no-empty-function': ERROR,
+        'no-extra-bind': ERROR,
+        'no-sequences': ERROR,
+        'no-useless-call': ERROR,
+        'no-useless-escape': ERROR,
+        'no-useless-return': ERROR,
+        'no-with': ERROR,
+        'wrap-iife': [ERROR, 'inside'],
+        'consistent-this': ERROR
     }
 };
