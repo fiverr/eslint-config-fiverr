@@ -23,7 +23,6 @@ module.exports = {
         'no-useless-rename': ERROR,
         'no-var': ERROR,
         'object-shorthand': ['error', 'properties'],
-        'prefer-arrow-callback': ERROR,
         'prefer-const': ERROR,
         'prefer-spread': ERROR,
         'prefer-template': ERROR,
