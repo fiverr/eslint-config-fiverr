@@ -68,5 +68,3 @@ You can use either of these plugins:
 
 ##### Atom
 [linter-eslint](https://atom.io/packages/linter-eslint)
-
-
