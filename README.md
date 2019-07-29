@@ -7,7 +7,7 @@ ESLint configuration & ruleset for Javascript (ES6) + React.
 In order to add eslint-config-fiverr to a repository, use npm to add it to the development dependencies.
 
 ```
-npm i -D @fiverr/eslint-config-fiverr [eslint-plugin-react]
+npm i -D @fiverr/eslint-config-fiverr eslint-plugin-react
 ```
 
 ## Configuration
