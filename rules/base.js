@@ -77,6 +77,12 @@ module.exports = {
         'no-useless-return': ERROR,
         'no-with': ERROR,
         'wrap-iife': [ERROR, 'inside'],
-        'consistent-this': ERROR
+        'consistent-this': ERROR,
+        'import/no-self-import': ERROR,
+        'import/no-internal-modules': IGNORE,
+        'import/no-dynamic-require': IGNORE,
+        'import/no-useless-path-segments': ERROR,
+        'import/order': WARN,
+        'import/newline-after-import': ERROR
     }
 };
