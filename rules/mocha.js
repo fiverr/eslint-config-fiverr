@@ -1,3 +1,5 @@
+const { IGNORE } = require('../constants');
+
 module.exports = {
     overrides: [
         {
@@ -14,7 +16,8 @@ module.exports = {
                 assert: true
             },
             rules: {
-                'no-empty-function': 0
+                'no-empty-function': IGNORE,
+                'import/namespace': IGNORE
             }
         }
     ]
