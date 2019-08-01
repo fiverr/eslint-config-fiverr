@@ -1,7 +1,7 @@
 {
   "name": "@fiverr/eslint-config-fiverr",
   "moduleName": "eslint-config-fiverr",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Fiverr's ESLint config",
   "author": "Fiverr",
   "license": "MIT",

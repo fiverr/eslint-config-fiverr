@@ -5,7 +5,11 @@ module.exports = {
         {
             files: [
                 '**/spec.js',
-                '**/*.spec.js'
+                '**/*.spec.js',
+                '**/*_spec.js',
+                '**/test.js',
+                '**/*.test.js',
+                '**/*_test.js'
             ],
             env: {
                 mocha: true,

@@ -6,7 +6,11 @@ module.exports = {
             files: [
                 '*/__mocks__/*',
                 '**/spec.js',
-                '**/*.spec.js'
+                '**/*.spec.js',
+                '**/*_spec.js',
+                '**/test.js',
+                '**/*.test.js',
+                '**/*_test.js'
             ],
             env: {
                 jest: true,
