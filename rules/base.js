@@ -83,6 +83,7 @@ module.exports = {
         'import/no-dynamic-require': IGNORE,
         'import/no-useless-path-segments': ERROR,
         'import/order': WARN,
-        'import/newline-after-import': ERROR
+        'import/newline-after-import': ERROR,
+        'import/no-named-as-default': IGNORE
     }
 };
