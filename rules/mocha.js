@@ -12,7 +12,7 @@ module.exports = {
                 '**/*_test.js'
             ],
             env: {
-                mocha: true,
+                mocha: true
             },
             globals: {
                 global: true,

@@ -1,0 +1,7 @@
+{
+    "extends": [
+        "./rules/base",
+        "./rules/es6",
+        "./rules/jest"
+    ]
+}
