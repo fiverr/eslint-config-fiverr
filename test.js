@@ -6,7 +6,7 @@ const exec = require('async-execute');
  * fixtures directory
  * @type {string}
  */
-const fixtures = join(__dirname, 'fixtures');
+const fixtures = readdirSync(join(__dirname, 'fixtures'));
 
 /**
  * eslint binary
@@ -21,12 +21,10 @@ const eslint = join(__dirname, 'node_modules/.bin/eslint');
 const config = join(__dirname, '.eslintrc');
 
 /**
- * Output of stream output
- * @type {object}
+ * Output of stream output successful or failed
+ * @type {string}
  */
-const result = {
-    status: undefined
-};
+let status;
 
 /**
  * Populate the variable 'result' with execution result
@@ -40,24 +38,21 @@ const lint = async(file) => await exec(
         `"${join(__dirname, 'fixtures', file)}"`
     ].join(' ')
 ).then(
-    () => { result.status = 'pass'; }
+    () => { status = 'pass'; }
 ).catch(
-    () => { result.status = 'fail'; }
+    () => { status = 'fail'; }
 );
 
 describe('linting tests', () => {
     afterEach(() => {
-        result.status = undefined;
+        status = undefined;
     });
-    readdirSync(fixtures).forEach((fixture) => {
-        it([fixture, 'fail'].join(' '), async() => {
-            await lint(`${fixture}/fail.js`);
-            expect(result.status).toBe('fail');
-        });
-
-        it([fixture, 'pass'].join(' '), async() => {
-            await lint(`${fixture}/pass.js`);
-            expect(result.status).toBe('pass');
-        });
+    it.each(fixtures)('%s fail', async(fixture) => {
+        await lint(`${fixture}/fail.js`);
+        expect(status).toBe('fail');
+    });
+    it.each(fixtures)('%s pass', async(fixture) => {
+        await lint(`${fixture}/pass.js`);
+        expect(status).toBe('pass');
     });
 });
