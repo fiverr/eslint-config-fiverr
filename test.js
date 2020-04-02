@@ -21,38 +21,25 @@ const eslint = join(__dirname, 'node_modules/.bin/eslint');
 const config = join(__dirname, '.eslintrc');
 
 /**
- * Output of stream output successful or failed
- * @type {string}
- */
-let status;
-
-/**
  * Populate the variable 'result' with execution result
  * @param {string} file to check
  */
-const lint = async(file) => await exec(
+const lint = (file) => exec(
     [
         eslint,
         '-c',
         config,
         `"${join(__dirname, 'fixtures', file)}"`
     ].join(' ')
-).then(
-    () => { status = 'pass'; }
-).catch(
-    () => { status = 'fail'; }
 );
 
 describe('linting tests', () => {
-    afterEach(() => {
-        status = undefined;
-    });
-    it.each(fixtures)('%s fail', async(fixture) => {
-        await lint(`${fixture}/fail.js`);
-        expect(status).toBe('fail');
-    });
-    it.each(fixtures)('%s pass', async(fixture) => {
-        await lint(`${fixture}/pass.js`);
-        expect(status).toBe('pass');
-    });
+    it.each(fixtures)(
+        '%s fail',
+        (fixture) => expect(lint(`${fixture}/fail.js`)).rejects.toThrow()
+    );
+    it.each(fixtures)(
+        '%s pass',
+        (fixture) => expect(lint(`${fixture}/pass.js`)).resolves.not.toThrow()
+    );
 });
