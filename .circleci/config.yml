@@ -1,7 +1,7 @@
 defaults: &defaults
   working_directory: ~/app
   docker:
-    - image: circleci/node:10
+    - image: circleci/node:12
 
 version: 2
 jobs:
@@ -9,6 +9,15 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - run:
+          name: Install dependencies
+          command: npm i
+      - run:
+          name: Tests
+          command: npm t
+      - run:
+          name: Lint code
+          command: npm run lint -- --plugin log
       - run:
           name: Set npmrc credentials
           command: echo -e $NPMRC > ~/.npmrc

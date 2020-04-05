@@ -54,6 +54,7 @@ module.exports = {
         'space-before-function-paren': [ERROR, 'never'],
         'space-in-parens': ERROR,
         'spaced-comment': [ERROR, 'always'],
+        'object-curly-spacing': [ERROR, 'always'],
         'vars-on-top': ERROR,
         'radix': ERROR,
         'no-nested-ternary': ERROR,

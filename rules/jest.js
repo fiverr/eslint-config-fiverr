@@ -13,12 +13,12 @@ module.exports = {
                 '**/*_test.js'
             ],
             env: {
-                jest: true,
+                jest: true
             },
             globals: {
                 mount: false,
                 render: false,
-                shallow: false,
+                shallow: false
             },
             rules: {
                 'no-empty-function': IGNORE,
