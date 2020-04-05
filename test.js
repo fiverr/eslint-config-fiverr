@@ -36,10 +36,14 @@ const lint = (file) => exec(
 describe('linting tests', () => {
     it.each(fixtures)(
         '%s fail',
-        (fixture) => expect(lint(`${fixture}/fail.js`)).rejects.toThrow()
+        (fixture) => expect(
+            lint(`${fixture}/fail.js`)
+        ).rejects.toThrow()
     );
     it.each(fixtures)(
         '%s pass',
-        (fixture) => expect(lint(`${fixture}/pass.js`)).resolves.not.toThrow()
+        (fixture) => expect(
+            lint(`${fixture}/pass.js`)
+        ).resolves.not.toThrow()
     );
 });
