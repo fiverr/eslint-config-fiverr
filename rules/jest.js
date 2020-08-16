@@ -16,6 +16,7 @@ module.exports = {
                 jest: true
             },
             globals: {
+                globalThis: false,
                 mount: false,
                 render: false,
                 shallow: false

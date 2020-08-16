@@ -15,6 +15,7 @@ module.exports = {
                 mocha: true
             },
             globals: {
+                globalThis: true,
                 global: true,
                 expect: true,
                 assert: true
