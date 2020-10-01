@@ -24,6 +24,7 @@ module.exports = {
         'comma-style': ERROR,
         'computed-property-spacing': ERROR,
         'dot-notation': ERROR,
+        'eol-last': ERROR,
         'func-call-spacing': ERROR,
         'indent': [ERROR, 4, {
             SwitchCase: WARN
@@ -38,8 +39,12 @@ module.exports = {
         'new-cap': IGNORE,
         'no-lonely-if': ERROR,
         'no-case-declarations': IGNORE,
-        'no-multiple-empty-lines': ERROR,
-        'no-trailing-spaces': WARN,
+        'no-multiple-empty-lines': [ERROR, {
+            max: 1,
+            maxBOF: 0,
+            maxEOF: 0
+        }],
+        'no-trailing-spaces': ERROR,
         'no-unneeded-ternary': ERROR,
         'no-unused-vars': [ERROR, {
             varsIgnorePattern: 'React',
