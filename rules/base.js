@@ -6,6 +6,9 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings'
     ],
+    plugins: [
+        'promise'
+    ],
     env: {
         browser: true,
         jquery: true,
@@ -90,6 +93,7 @@ module.exports = {
         'import/no-useless-path-segments': ERROR,
         'import/order': WARN,
         'import/newline-after-import': ERROR,
-        'import/no-named-as-default': IGNORE
+        'import/no-named-as-default': IGNORE,
+        'promise/catch-or-return': ERROR
     }
 };
