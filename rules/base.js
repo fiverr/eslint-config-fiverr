@@ -87,6 +87,7 @@ module.exports = {
         'no-with': ERROR,
         'wrap-iife': [ERROR, 'inside'],
         'consistent-this': ERROR,
+        'import/dynamic-import-chunkname': ERROR,
         'import/no-self-import': ERROR,
         'import/no-internal-modules': IGNORE,
         'import/no-dynamic-require': IGNORE,
@@ -94,7 +95,6 @@ module.exports = {
         'import/order': WARN,
         'import/newline-after-import': ERROR,
         'import/no-named-as-default': IGNORE,
-        'promise/catch-or-return': ERROR,
-        'dynamic-import-chunkname': ERROR
+        'promise/catch-or-return': ERROR
     }
 };
