@@ -94,6 +94,7 @@ module.exports = {
         'import/order': WARN,
         'import/newline-after-import': ERROR,
         'import/no-named-as-default': IGNORE,
-        'promise/catch-or-return': ERROR
+        'promise/catch-or-return': ERROR,
+        'dynamic-import-chunkname': ERROR
     }
 };
