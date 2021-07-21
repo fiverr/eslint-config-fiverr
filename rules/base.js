@@ -50,7 +50,7 @@ module.exports = {
         'no-trailing-spaces': ERROR,
         'no-unneeded-ternary': ERROR,
         'no-unused-vars': [ERROR, {
-            varsIgnorePattern: 'React',
+            varsIgnorePattern: '^(_\\d?|React(DOM)?)$',
             ignoreRestSiblings: true
         }],
         'no-whitespace-before-property': ERROR,
