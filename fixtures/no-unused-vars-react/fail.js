@@ -1,4 +1,4 @@
 import react from 'react';
-import react_dom from 'react-dom';
+import reactdom from 'react-dom';
 
 export default () => null;
