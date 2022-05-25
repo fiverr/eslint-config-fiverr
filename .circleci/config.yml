@@ -10,6 +10,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Set npmrc credentials
+          command: echo -e $NPMRC > ~/.npmrc
+      - run:
           name: Install dependencies
           command: npm i
       - run:
@@ -18,9 +21,6 @@ jobs:
       - run:
           name: Lint code
           command: npm run lint -- --plugin log
-      - run:
-          name: Set npmrc credentials
-          command: echo -e $NPMRC > ~/.npmrc
       - run:
           name: Publish this thing
           command: npx published  --git-tag

@@ -92,7 +92,16 @@ module.exports = {
         'import/no-internal-modules': IGNORE,
         'import/no-dynamic-require': IGNORE,
         'import/no-useless-path-segments': ERROR,
-        'import/order': WARN,
+        'import/order': [ ERROR, {
+            'pathGroups': [
+                {
+                    'pattern': '@fiverr-private/**',
+                    'group': 'external',
+                    'position': 'after'
+                }
+            ],
+            pathGroupsExcludedImportTypes: ['builtin']
+        }],
         'import/newline-after-import': ERROR,
         'import/no-named-as-default': IGNORE,
         'promise/catch-or-return': ERROR
