@@ -1,7 +1,7 @@
 {
   "name": "@fiverr/eslint-config-fiverr",
   "moduleName": "eslint-config-fiverr",
-  "version": "3.2.6",
+  "version": "3.3.0.rc.rush",
   "description": "Fiverr's ESLint config",
   "author": "Fiverr",
   "license": "MIT",
@@ -22,7 +22,8 @@
     "eslint-plugin-promise": "^4.2.1"
   },
   "peerDependencies": {
-    "eslint": "*"
+    "eslint": "*",
+    "eslint-plugin-import": "^2.18.2"
   },
   "optionalDependencies": {
     "eslint-plugin-react": "*",
