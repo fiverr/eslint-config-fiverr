@@ -23,7 +23,8 @@
   },
   "peerDependencies": {
     "eslint": "*",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.19.0"
   },
   "optionalDependencies": {
     "eslint-plugin-react": "*",
