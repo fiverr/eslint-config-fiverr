@@ -1,7 +1,7 @@
 {
   "name": "@fiverr/eslint-config-fiverr",
   "moduleName": "eslint-config-fiverr",
-  "version": "3.2.6",
+  "version": "3.2.7-rc",
   "description": "Fiverr's ESLint config",
   "author": "Fiverr",
   "license": "MIT",
@@ -32,6 +32,7 @@
     "@fiverr-private/obs": "^1.28.1",
     "async-execute": "^1.2.0",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-log": "^1.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",

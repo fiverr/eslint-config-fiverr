@@ -1,4 +1,4 @@
-const { ERROR, WARN, IGNORE } = require('../constants');
+const { ERROR, IGNORE } = require('../constants');
 
 module.exports = {
     extends: [
@@ -16,53 +16,15 @@ module.exports = {
     },
     rules: {
         'eqeqeq': ERROR,
-        'no-multi-spaces': [ERROR, {
-            exceptions: {
-                VariableDeclarator: true,
-                Property: false
-            }
-        }],
-        'comma-dangle': ERROR,
-        'comma-spacing': ERROR,
-        'comma-style': ERROR,
-        'computed-property-spacing': ERROR,
         'dot-notation': ERROR,
-        'eol-last': ERROR,
-        'func-call-spacing': ERROR,
-        'indent': [ERROR, 4, {
-            SwitchCase: WARN
-        }],
-        'jsx-quotes': ERROR,
-        'keyword-spacing': ERROR,
-        'lines-around-comment': [ERROR, {
-            beforeBlockComment: true,
-            allowBlockStart: true,
-            beforeLineComment: true
-        }],
         'new-cap': IGNORE,
         'no-lonely-if': ERROR,
         'no-case-declarations': IGNORE,
-        'no-multiple-empty-lines': [ERROR, {
-            max: 1,
-            maxBOF: 0,
-            maxEOF: 0
-        }],
-        'no-trailing-spaces': ERROR,
         'no-unneeded-ternary': ERROR,
         'no-unused-vars': [ERROR, {
             varsIgnorePattern: 'React',
             ignoreRestSiblings: true
         }],
-        'no-whitespace-before-property': ERROR,
-        'quotes': [ERROR, 'single', {
-            avoidEscape: true
-        }],
-        'semi-spacing': ERROR,
-        'semi': [ERROR, 'always'],
-        'space-before-function-paren': [ERROR, 'never'],
-        'space-in-parens': ERROR,
-        'spaced-comment': [ERROR, 'always'],
-        'object-curly-spacing': [ERROR, 'always'],
         'vars-on-top': ERROR,
         'radix': ERROR,
         'no-nested-ternary': ERROR,
@@ -70,7 +32,6 @@ module.exports = {
         'no-unsafe-negation': ERROR,
         'array-callback-return': ERROR,
         'block-scoped-var': ERROR,
-        'curly': ERROR,
         'default-case': ERROR,
         'no-caller': ERROR,
         'no-eval': ERROR,
@@ -102,7 +63,6 @@ module.exports = {
             ],
             pathGroupsExcludedImportTypes: ['builtin']
         }],
-        'import/newline-after-import': ERROR,
         'import/no-named-as-default': IGNORE,
         'promise/catch-or-return': ERROR
     }

@@ -12,9 +12,6 @@ module.exports = {
         }
     },
     rules: {
-        'arrow-body-style': ERROR,
-        'arrow-parens': ERROR,
-        'arrow-spacing': ERROR,
         'no-duplicate-imports': ERROR,
         'no-template-curly-in-string': ERROR,
         'no-useless-computed-key': ERROR,
@@ -25,8 +22,6 @@ module.exports = {
         'prefer-arrow-callback': ERROR,
         'prefer-const': ERROR,
         'prefer-spread': ERROR,
-        'prefer-template': ERROR,
-        'rest-spread-spacing': ERROR,
-        'template-curly-spacing': ERROR
+        'prefer-template': ERROR
     }
 };

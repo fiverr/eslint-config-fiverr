@@ -33,15 +33,9 @@ module.exports = {
         'react/prefer-es6-class': ERROR,
         'react/prefer-stateless-function': ERROR,
         'react/sort-comp': ERROR,
-        'react/jsx-closing-bracket-location': [ERROR, 'after-props'],
-        'react/jsx-curly-spacing': ERROR,
-        'react/jsx-equals-spacing': ERROR,
         'react/jsx-filename-extension': [WARN, {
             extensions: ['.js']
         }],
-        'react/jsx-first-prop-new-line': [ERROR, 'never'],
-        'react/jsx-indent': [ERROR, 4],
-        'react/jsx-indent-props': [ERROR, 4],
         'react/jsx-key': ERROR,
         'react/jsx-no-bind': [ERROR, {
             ignoreRefs: true,
@@ -51,11 +45,7 @@ module.exports = {
         'react/jsx-no-duplicate-props': ERROR,
         'react/jsx-no-undef': ERROR,
         'react/jsx-pascal-case': ERROR,
-        'react/jsx-tag-spacing': [ERROR, {
-            beforeSelfClosing: 'never'
-        }],
         'react/jsx-uses-vars': ERROR,
-        'react/jsx-wrap-multilines': ERROR,
         'react-hooks/rules-of-hooks': ERROR,
         'react-hooks/exhaustive-deps': ERROR
     }
