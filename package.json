@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-promise": "^4.2.1"
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-config-prettier": "^8.5.0"
   },
   "peerDependencies": {
     "eslint": "*"
@@ -32,7 +33,6 @@
     "@fiverr-private/obs": "^1.28.1",
     "async-execute": "^1.2.0",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-log": "^1.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
