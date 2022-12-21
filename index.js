@@ -5,6 +5,6 @@ module.exports = {
         './rules/react',
     ]
     .map(require.resolve)
-    .concat('prettier'),
+    .push('prettier'),
     rules: {}
 };
