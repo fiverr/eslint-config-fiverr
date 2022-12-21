@@ -3,7 +3,8 @@ module.exports = {
         './rules/base',
         './rules/es6',
         './rules/react',
-        'prettier'
-    ].map(require.resolve),
+    ]
+    .map(require.resolve)
+    .concat('prettier'),
     rules: {}
 };
