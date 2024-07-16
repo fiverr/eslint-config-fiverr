@@ -23,7 +23,11 @@ jobs:
           command: npm run lint -- --plugin log
       - run:
           name: Publish this thing
-          command: npx published  --git-tag
+          command: |
+                   curl --header "Authorization: token ${GITHUB_API_TOKEN}" \
+                   --header 'Accept: application/vnd.github.v3.raw' \
+                   --header "User-Agent: fiverr/${CIRCLE_PROJECT_REPONAME}" \
+                   https://raw.githubusercontent.com/fiverr/circleci_common/scripts/node-package/publish-public-package.sh | bash
 
 workflows:
   version: 2
